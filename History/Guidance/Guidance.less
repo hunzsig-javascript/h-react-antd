@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+.ant-tabs > .ant-tabs-nav, .ant-tabs > div > .ant-tabs-nav {
+  margin-bottom: 6px;
+}
+
+.app > .container .exhibition > .guidance {
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .top-operate {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+
+    .left {
+      text-align: left;
+      flex: 1;
+
+      .ant-btn {
+        margin-right: 5px;
+      }
+    }
+
+    .right {
+      text-align: right;
+
+      .ant-btn {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .top-operate.light {
+    background: #ffffff;
+  }
+
+  .top-operate.dark {
+    background: #001529;
+
+    .ant-btn.ant-btn-text {
+      color: #ffffff;
+    }
+
+    .ant-btn.ant-btn-text:hover {
+      background: #5e5d5d
+    }
+  }
+
+  > .bars-guides {
+
+    margin: 10px 10px 0 10px;
+
+    .right-cm:hover {
+      background: #ffffff;
+    }
+
+    .right-cm {
+      position: fixed;
+      width: 130px;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 3px;
+      box-shadow: 3px 3px 5px #bbbbbb;
+      z-index: 29;
+      box-sizing: content-box;
+
+      > div {
+        padding: 5px 12px;
+        border-bottom: 1px solid #eeeeee;
+        cursor: pointer;
+
+        .anticon {
+          margin-right: 5px;
+        }
+      }
+
+      > div:hover {
+        background: #2598ea;
+        color: #ffffff;
+      }
+
+      > div:last-child {
+        border-bottom: 0;
+      }
+
+    }
+
+  }
+
+}
